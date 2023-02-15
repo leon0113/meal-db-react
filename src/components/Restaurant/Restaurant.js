@@ -11,5 +11,5 @@ const Restaurant = () => {
         </div>
     );
 };
-kll
+
 export default Restaurant;
