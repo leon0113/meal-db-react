@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Meal from '../Meal/Meal';
 
 const Restaurant = () => {
     const [searchText, setSearchText] = useState('');
@@ -21,7 +22,7 @@ const Restaurant = () => {
             <h3>Result found : {meals.length}</h3>
             <div>
                 {
-                    meals.map(meal =>)
+                    meals.map(meal => <Meal key={meal.idMeal} meal={meal}></Meal>)
                 }
             </div>
         </div>
